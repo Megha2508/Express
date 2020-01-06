@@ -1,0 +1,14 @@
+html
+  head
+    title= title
+
+    script(src="/javascripts/jquery/dist/jquery.js")
+    script(src="/stylesheets/bootstrap/dist/js/bootstrap.js")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/stylesheets/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    
+  body
+    include ./partial/header.jade
+    div(style="padding: 50px 0 0 0")
+      block content

@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    div.box.box-primary
+        form.form.col-md-6.offset-md-3(action="/admin/products/add",method="post")
+            div.box-body
+                div.form-group
+                    label(for="name") Name
+                    input.form-control(placeholder="Enter Product name",name='name')
+                div.form-group
+                    label(for="price") Price
+                    input.form-control(placeholder="Enter Product price",name='price')
+                div.form-group
+                    label(for="image") Image
+                    input(type='file',name='image')
+                div.form-group
+                    label(for="weight") Weight
+                    input.form-control(placeholder="Enter Product weight",name='weight')
+                div.form-group
+                    label(for="type") Type
+                    input.form-control(placeholder="Enter Product type",name='type')
+            div.box-footer
+                button.btn.btn-success(type="submit") Save
